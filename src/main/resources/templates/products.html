@@ -27,7 +27,7 @@
                     <a class="nav-link" th:href="@{/admin}" href="#">Trang Chủ Admin</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/logout}" href="#">logout</a>
+                    <a class="nav-link" th:href="@{/logout}" href="#">Logout</a>
                 </li>
 
             </ul>
@@ -43,18 +43,20 @@
         <tr>
             <th scope="col">Mã Sản Phẩm</th>
             <th scope="col">Tên Sản Phẩm</th>
-            <th scope="col">Nhà Xuất Bản</th>
+            <th scope="col">Tác Giả</th>
+            <th scope="col">Thể Loại</th>
             <th scope="col">Mô Tả</th>
             <th scope="col">Xóa</th>
-            <th scope="col">Chính Sửa</th>
+            <th scope="col">Chỉnh Sửa</th>
         </tr>
         </thead>
         <tbody>
 
         <tr th:each="product, iStat : ${products}">
-            <th scope="row" th:text="${iStat.index + 1}">1</th>
-            <td th:text="${product.name}">Đắc Nhân Tâm</td>
-            <td th:text="${product.category.name}">Hồng Fong</td>
+            <th scope="row" th:text="${iStat.index + 1}"></th>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.author}"></td>
+            <td th:text="${product.category.name}"></td>
             <td><img src="" height="100px" width="100px"  th:src="@{${'/productImages/' + product.imageName}}"></td>
 
             <td><a href="" th:href="@{/admin/product/delete/{id}(id=${product.id})}" class="btn btn-danger">Xóa</a></td>

@@ -1,0 +1,51 @@
+.header
+{
+    height:var(--header-height);/* width kế thừa html */
+
+}
+.header__navbar
+{
+    height:var(--navbar-height); 
+    background-image:linear-gradient(0,#575858,#565c5d);
+    display: flex;
+    justify-content: space-between; 
+
+}
+.navbar-nav
+{
+    list-style: none;
+    padding-left:0;
+    margin:5px 0 0 0;
+}
+.nav-item 
+{
+    margin :0 8px;
+    position:relative;
+    min-height:26px;
+
+}
+.nav-item,
+.nav-link
+{
+    display :inline-block;/* giu lai tinh chat khoi nhung cung 1 hang */
+    font-size:1.4rem;
+    color:var(--while-color);
+    text-decoration:none;/* xóa gạch chân */
+    font-weight: 300;
+
+}
+.nav-item:hover,
+.nav-link:hover{
+    cursor: pointer;/* tạo con trỏ bàn tay */
+    color:rgba(255,255,255,0.7);
+}
+
+.app__container
+{
+    width: 100%;
+}
+.container_img
+{
+    width: 100%;
+    margin: 0;
+}

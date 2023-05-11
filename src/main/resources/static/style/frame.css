@@ -1,0 +1,40 @@
+:root /*khai bao bien */
+{
+    --while-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#4f5a90;
+    --boder-color:#6f7e92;
+    
+    --header-height:31px;
+    /* --navbar-height:40px; */
+    /* --header-with-search-height:calc(var(--header-height) - var(--navbar-height)); */
+
+
+}
+
+*{
+    /* selecter * => upline thuộc tính css lên các phần tử của html được nhung file basic.css (kế thừa ) */
+    box-sizing:inherit; /*kế thừa thẻ chứa nó */
+ 
+}
+html {
+   font-size:62.5%;/* kích thước phông chữ = 10px, 100%=16px*/ 
+   line-height: 1.6rem;/* chiều cao chữ rem kế thừa thẻ cha */
+   font-family:'Roboto',sans-serif ;/* kieu chu ko chan */
+   box-sizing:border-box;
+
+}
+/* reponsive */
+.grid{
+    /* man hinh co dan man hinh  */
+    /* width:1200px; */
+    max-width:100%;
+    margin:0 auto; /* tu dong giua khi nam trong khoi khac  */
+
+}
+.grid__full-width
+{
+    width:100%;
+    
+}

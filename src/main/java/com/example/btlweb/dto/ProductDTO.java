@@ -10,6 +10,7 @@ import lombok.Data;
 public class ProductDTO {
     private Long id;
     private String name;
+    private String author;
     private int categoryId;
     private double price;
     private double weight;

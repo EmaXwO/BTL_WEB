@@ -84,6 +84,7 @@ public class AdminController {
         Product product = new Product();
         product.setId(productDTO.getId());
         product.setName(productDTO.getName());
+        product.setAuthor(productDTO.getAuthor());
         product.setCategory(categoryService.getCategoryById(productDTO.getCategoryId()).get());
         product.setPrice(productDTO.getPrice());
         product.setWeight(productDTO.getWeight());
@@ -115,6 +116,7 @@ public class AdminController {
 
         productDTO.setId(product.getId());
         productDTO.setName(product.getName());
+        productDTO.setAuthor(product.getAuthor());
         productDTO.setCategoryId(product.getCategory().getId());
         productDTO.setPrice(product.getPrice());
         productDTO.setWeight(product.getWeight());
